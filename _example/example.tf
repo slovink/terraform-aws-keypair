@@ -4,7 +4,6 @@ provider "aws" {
 
 module "keypair" {
   source = "./../"
-
   name        = "yada"
   environment = "test"
   label_order = ["name", "environment"]
