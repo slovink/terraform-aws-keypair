@@ -1,5 +1,8 @@
+##----------------------------------------------------------------------------------
 #Module      : LABEL
 #Description : Terraform label module variables.
+##----------------------------------------------------------------------------------
+
 variable "name" {
   type        = string
   default     = ""
@@ -67,4 +70,19 @@ variable "enable_key_pair" {
   type        = bool
   default     = true
   description = "A boolean flag to enable/disable key pair."
+}
+variable "enable_private_key" {
+  type        = bool
+  default     = false
+  description = "Determines whether a private key will be created"
+}
+variable "private_key_algorithm" {
+  type        = string
+  default     = "RSA"
+  description = "Name of the algorithm to use when generating the private key. Currently-supported values are `RSA` and `ED25519`"
+}
+variable "private_key_rsa_bits" {
+  type        = number
+  default     = 2048
+  description = "When algorithm is `RSA`, the size of the generated RSA key, in bits (default: `2048`)"
 }
