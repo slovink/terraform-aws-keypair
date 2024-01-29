@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "eu-west-1"
+  region = "ap-southeast-2"
 }
 
 module "keypair" {
   source = "./../"
 
-  name        = "key"
+  name        = "yada"
   environment = "test"
   label_order = ["name", "environment"]
 
   enable_key_pair = true
-  public_key      = "ssh-rsa AAAAB3NqWk3Bw/NgygFXz7vob9OiA/fb2T3t4R1EwEs5rUX3uD2UBm6sbGBH00ZCjTHBwKHaGvKLk4c5gHX"
+  public_key      = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCudIC/l8ZCHUMv44k0eLjG6Dy3ByAIcwXN0acQ2RzzNTY/VnTut5UXlADEv8QErytuf5Q5sMmxJIEaqXeX+A2DskmZ9SizshU0nx95T52UU+7DF6zesFeWf2OhxP+J8XIHgnpBkBIglydRR8hUOktz0fqemUdRJ6nkpQzsfVnCOn1WF5eazJxHYQHmABrOy371Cxbm11dMXqiWvg+hrnUxl1rwRwClBaOjlp3vVmpcnkpdp4mC7WGiT/UZpc+NK4S3Kc2GwkHvcGANllsyJSSb34JPFnoWgJ4YKLwxtaWkLW3dnIhDrhARE7TcdW+OxiIgsl88TMyAMESr9FdO7G7ysdTLzKP6IPoTxmDJI+OT6QJLIh3KqmVrQlEHlnP8QeOMrF65bUjmg+ZgkCq1J8o/5hAKRvBfm2Mq+3lFB8h3v/7dpceRrzzajpMTYlJFHBcZ4Gl6mUl/4KZDhlicv8vAw5jSomYZ3tlnvapF1/YcQJzRGOP+JJTOVr1VV+FQEn8= vinod@vinod"
 }
