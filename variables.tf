@@ -33,12 +33,6 @@ variable "attributes" {
   description = "Additional attributes (e.g. `1`)."
 }
 
-variable "tags" {
-  type        = map(string)
-  default     = {}
-  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
-}
-
 variable "managedby" {
   type        = string
   default     = ""
@@ -58,12 +52,6 @@ variable "key_path" {
   type        = string
   default     = ""
   description = "Name  (e.g. `~/.ssh/id_rsa.pub`)."
-}
-
-variable "key_name" {
-  type        = string
-  default     = ""
-  description = "Name  (e.g. `it-admin` or `devops`)."
 }
 
 variable "enable_key_pair" {
