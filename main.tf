@@ -6,7 +6,7 @@
 ####----------------------------------------------------------------------------------
 
 module "labels" {
-  source = "git::git@github.com:slovink/terraform-aws-labels.git?ref=1.2.3"
+  source = "git::git@github.com:slovink/terraform-aws-labels.git?ref=1.0.0"
 
   name        = var.name
   environment = var.environment
