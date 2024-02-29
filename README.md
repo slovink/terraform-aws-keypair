@@ -54,6 +54,8 @@ module "keypair" {
   public_key      = "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxX"
 }
   ```
+## Examples
+For detailed examples on how to use this module, please refer to the [Examples](https://github.com/slovink/terraform-aws-keypair/tree/vinod/_example) directory within this repository.
 
 
 ## About us
