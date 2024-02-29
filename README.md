@@ -1,13 +1,12 @@
-
 <p align="center"> <img src="https://user-images.githubusercontent.com/50652676/62349836-882fef80-b51e-11e9-99e3-7b974309c7e3.png" width="100" height="100"></p>
 
 
 <h1 align="center">
-    Terraform AWS Keypair
+    Terraform AWS keypair
 </h1>
 
 <p align="center" style="font-size: 1.2rem;">
-    Terraform module to create Keypair resource on AWS.
+    Terraform module to create keypair resource on AWS.
      </p>
 
 <p align="center">
@@ -15,9 +14,10 @@
 <a href="https://www.terraform.io">
   <img src="https://img.shields.io/badge/Terraform-v1.7.0-green" alt="Terraform">
 </a>
-<a href="LICENSE.md">
+<a href="https://github.com/slovink/terraform-aws-keypair/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/License-APACHE-blue.svg" alt="Licence">
 </a>
+
 
 
 </p>
@@ -42,17 +42,6 @@ This module has a few dependencies:
 - [Go](https://golang.org/doc/install)
 
 
-
-
-
-
-
-## Examples
-
-
-**IMPORTANT:** Since the `master` branch used in `source` varies based on new modifications, we suggest that you use the release versions [here](https://github.com/slovink/terraform-aws-keypair/releases).
-
-
 ### Simple Example
 Here is an example of how you can use this module in your inventory structure:
   ```hcl
@@ -67,9 +56,24 @@ module "keypair" {
   ```
 
 
+## About us
+At https://slovink.com/ we offer expert guidance, implementation support and services to help organisations accelerate their journey to the slovi. Our
+services include docker and container orchestration, slov migration and adoption, infrastructure automation, application modernisation and
+remediation, and performance engineering.
+
+## Examples
+For detailed examples on how to use this module, please refer to the [Examples](https://github.com/slovink/terraform-aws-keypair/tree/master/example) directory within this repository.
+
+## License
+This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/slovink/terraform-aws-keypair/blob/master/LICENSE) file for more details.
+
+## Author
+Your Name
+Replace **MIT** and **slovink** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+
 
 ## Feedback
-If you come accross a bug or have any feedback, please log it in our [issue tracker](https://github.com/slovink/terraform-aws-keypair/issues), or feel free to drop us an email at [devops@slovink.com](mailto:devops@slovink.com).
+If you come accross a bug or have any feedback, please log it in our [issue tracker](https://github.com/slovink/terraform-aws-keypair/issues), or feel free to drop us an email at [concate@slovink.com](concate@slovink.com).
 
 If you have found it worth your time, go ahead and give us a ★ on [our GitHub](https://github.com/slovink/terraform-aws-keypair)!
 <!-- BEGIN_TF_DOCS -->
