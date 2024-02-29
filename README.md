@@ -61,8 +61,6 @@ At https://slovink.com/ we offer expert guidance, implementation support and ser
 services include docker and container orchestration, slov migration and adoption, infrastructure automation, application modernisation and
 remediation, and performance engineering.
 
-## Examples
-For detailed examples on how to use this module, please refer to the [Examples](https://github.com/slovink/terraform-aws-keypair/tree/master/example) directory within this repository.
 
 ## License
 This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/slovink/terraform-aws-keypair/blob/master/LICENSE) file for more details.
