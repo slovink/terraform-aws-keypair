@@ -1,0 +1,55 @@
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name : Terraform Keypair
+
+# License of this project
+license: "APACHE"
+
+# Canonical GitHub repo
+github_repo: git@github.com:slovink/terraform-aws-keypair.git
+
+
+# Badges to display
+badges:
+  - name: "Terraform"
+    image: "https://img.shields.io/badge/Terraform-v1.7.0-green"
+    url: "https://www.terraform.io"
+  - name: "Licence"
+    image: "https://img.shields.io/badge/License-APACHE-blue.svg"
+    url: "https://github.com/slovink/terraform-aws-keypair/blob/main/LICENSE"
+  - name: "tfsec"
+    image: "https://github.com/slovink/terraform-aws-keypair/actions/workflows/tfsec.yml/badge.svg"
+    url: "https://github.com/slovink/terraform-aws-keypair/tree/main/.github/workflows/tfsec.yml"
+
+
+
+#  description of this project
+description: |-
+  This terraform module is designed to generate consistent label names and tags for resources. You can use terraform-keypair to implement a strict naming convention.
+
+
+# extra content
+include:
+  - "terraform.md"
+# How to use this project
+usage : |-
+
+  ### Simple Example
+  Here is an example of how you can use this module in your inventory structure:
+  ```hcl
+
+    module "keypair" {
+      source = "https://github.com/slovink/terraform-aws-keypair.git?ref=v1.0.0"
+      name        = "key"
+      environment = "test"
+      label_order = ["name", "environment"]
+      enable_key_pair = true
+      public_key      = "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxX"
+     }
+
+   ```
+
